@@ -1,7 +1,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        'f8fafd': '#F8FAFD',
+      },
+      display: ["group-hover"],
+    },
   },
   plugins: [],
 }

@@ -1,8 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Logo from './logo.png'
 import Device from './device.png'
+import Image1 from './image1 (6).png'
+import Image2 from './image2 (1).png'
+import Image3 from './image3.png'
+import Image4 from './image4.png'
+import Image5 from'./image5.png'
+import Image6 from './image6.png'
 import { BsFillPlayFill } from 'react-icons/bs';
 import {CiLocationOn} from 'react-icons/ci'
+import {TbDroplets,TbDeviceAnalytics,TbCactus} from 'react-icons/tb'
+import {AiOutlineArrowRight} from 'react-icons/ai';
+import Slider from './Slider';
+
+
+
 
 
 
@@ -85,10 +98,54 @@ const LandingPage = () => {
                 </p>
             </div>
             {/* the companies section */}
-            <p class="text-black text-4xl font-semibold font-sans">In patnership with companies like </p>
+            <p class="text-black text-5xl font-semibold font-sans relative bottom-[230px]">In patnership with companies like </p>
+            <p className="w-[537px] text-center text-slate-500 text-xl  font-['General Sans Variable'] relative left-[700px] bottom-[200px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>quae quibusdam eos cumque suscipit beatae quos sed quisquam.</span></p>
 
+            {/* image-section-2 */}
+            <div className='flex flex-row gap-[100px] relative ml-[300px] relative bottom-[150px]'>
+            <img src={Image1} alt="logo-image"  className="px-5 w-36 h-20"/>
+            <img src={Image2} alt="logo-image" className="px-5  w-38 h-24"/>
+            <img src={Image3} alt="logo-image" className="px-5  w-38 h-24"/>
+            <img src={Image4} alt="logo-image" className="px-5  w-38 h-24"/>
+            <img src={Image5} alt="logo-image" className="px-5  w-36 h-24"/>
+            </div>
+
+            <p class="text-black text-5xl font-semibold font-sans relative relative ">What we solve </p>
+            <p className="w-[537px] text-center text-slate-500 text-xl  font-['General Sans Variable'] relative left-[700px] top-[40px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. quibusdam eos cumqu<span>quae quibusdam eos cumque suscipit beatae quos sed quisquam.</span></p>
 
         </div>
+        {/* three boxes */}
+        <div className="relative top-[60rem] flex flex-row gap-[5rem] ml-[11rem] ">
+            <div className="flex flex-col bg-slate-50 w-[30rem] h-[26rem] border border-gray-200 rounded-xl  ">
+                <TbDroplets fontSize={46} className="bg-slate-100 rounded-lg w-[5rem] h-[6rem] px-[10px] ml-[30px] mt-[30px] "/>
+                <p className="flex flex-col font-sans mt-[30px]"><strong className='text-3xl mb-[20px] font-medium'>Sustainable source of water</strong><span className="text-2xl text-slate-500 mr-[110px]">We provide a sustainable</span><span className="text-2xl text-slate-500 mr-[100px]">source of water to people</span><span className="text-2xl relative right-[3rem] text-slate-500 mr-[110px]">living in deserts</span></p>
+                <a href="#" className="text-2xl text-blue-700 mt-[30px] mr-[250px] ">Learn More <AiOutlineArrowRight className="relative left-[11.5rem] bottom-[1.5rem]"/></a>
+            </div>
+
+            <div className="flex flex-col bg-slate-50 w-[30rem] h-[26rem] border border-gray-200 rounded-xl ">
+                <TbDeviceAnalytics fontSize={46} className="bg-slate-100 rounded-lg w-[5rem] h-[6rem] px-[10px] ml-[30px] mt-[30px] "/>
+                <p className="flex flex-col font-sans mt-[30px]"><strong className='text-3xl mb-[20px] font-medium mr-[110px]'>Water management</strong><span className="text-2xl text-slate-500 mr-[110px]">We provide a sustainable</span><span className="text-2xl text-slate-500 mr-[100px]">source of water to people</span><span className="text-2xl relative right-[3rem] text-slate-500 mr-[110px]">living in deserts</span></p>
+                <a href="#" className="text-2xl text-blue-700 mt-[30px] mr-[250px] ">Learn More <AiOutlineArrowRight className="relative left-[11.5rem] bottom-[1.5rem]"/></a>
+            </div>
+
+            <div className="flex flex-col bg-slate-50 w-[30rem] h-[26rem] border border-gray-200 rounded-xl ">
+                <TbCactus fontSize={46} className="bg-slate-100 rounded-lg w-[5rem] h-[6rem] px-[10px] ml-[30px] mt-[30px] "/>
+                <p className="flex flex-col font-sans mt-[30px]"><strong className='text-3xl mb-[20px] mr-[160px] font-medium'>Water in deserts</strong><span className="text-2xl text-slate-500 mr-[110px]">We provide a sustainable</span><span className="text-2xl text-slate-500 mr-[100px]">source of water to people</span><span className="text-2xl relative right-[3rem] text-slate-500 mr-[110px]">living in deserts</span></p>
+                <a href="#" className="text-2xl text-blue-700 mt-[30px] mr-[250px] ">Learn More <AiOutlineArrowRight className="relative left-[11.5rem] bottom-[1.5rem]"/></a>
+            </div>
+        </div>
+
+        {/* swiper section */}
+        <div className="relative top-[1100px] bg-slate-100 h-[50rem] ">
+            <p className='flex flex-col mr-[880px] pt-[40px]'>
+            <strong className="text-4xl  relative right-[323px]">Get to know more</strong>
+            <span className='text-2xl relative right-[173px] top-[] mt-[20px] ' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
+            <span className='text-2xl mb-[40px] relative left-[62px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam incidunt asperiores dolorum, maiores  .</span>
+            </p>
+            <Slider  />
+
+        </div>
+
     </div>
   )
 }
