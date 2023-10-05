@@ -11,7 +11,7 @@ import Image6 from './image6.png'
 import { BsFillPlayFill } from 'react-icons/bs';
 import {CiLocationOn} from 'react-icons/ci'
 import {TbDroplets,TbDeviceAnalytics,TbCactus} from 'react-icons/tb'
-import {AiOutlineArrowRight} from 'react-icons/ai';
+import {AiOutlineArrowRight,AiOutlineCheckCircle} from 'react-icons/ai';
 import Slider from './Slider';
 
 
@@ -136,7 +136,7 @@ const LandingPage = () => {
         </div>
 
         {/* swiper section */}
-        <div className="relative top-[1100px] bg-slate-100 h-[50rem] ">
+        <div className="relative top-[1100px] bg-slate-100 h-[50rem]  ">
             <p className='flex flex-col mr-[880px] pt-[40px]'>
             <strong className="text-4xl  relative right-[323px]">Get to know more</strong>
             <span className='text-2xl relative right-[173px] top-[] mt-[20px] ' >Lorem, ipsum dolor sit amet consectetur adipisicing elit. </span>
@@ -146,6 +146,29 @@ const LandingPage = () => {
 
         </div>
 
+        {/* about-the-device-section */}
+            <div className ='flex flex-row bg-white relative top-[70rem] gap-[700px] '>
+            <div>
+                {/* ????????????????? the back-ground stuff  */}
+            <img src={Device} alt="device-image" className='ml-[5rem]'/>
+            </div>
+            <div className='flex flex-col items-center   mt-[80px] relative right-[9rem]'>
+                <p className='text-blue-700 text-lg mr-[29rem]'>About</p>
+                <h3 className='text-stone-950 text-3xl mr-[15rem] mb-[1rem] font-semibold font-Sans'>The AIRA condenser</h3>
+                <p className='text-slate-500 text-2xl text-left w-[32rem]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore modi, iure cum ipsam velit nihil repudiandae est blanditiis aliquam.</p>
+                    <div className='flex flex-col gap-3 relative right-[2rem]'>
+                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center mt-[3rem] '><AiOutlineCheckCircle className='' /><span>Air condensation</span></p>
+                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center  '><AiOutlineCheckCircle className='' /><span>Water filtration</span></p>
+                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center '><AiOutlineCheckCircle className='' /><span>Water storage</span></p>
+                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center '><AiOutlineCheckCircle className='' /><span>Usage analytics and device </span></p>
+
+                </div>
+                <button className="bg-blue-700  w-[140px]  mt-[4rem] mr-[21rem] h-[60px] text-lg text-white rounded-full hover:bg-black hover:text-blue-500 px-4 py-3">
+             Read more
+             </button>
+
+            </div>
+            </div>
     </div>
   )
 }
