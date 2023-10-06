@@ -11,7 +11,9 @@ import Image6 from './image6.png'
 import { BsFillPlayFill } from 'react-icons/bs';
 import {CiLocationOn} from 'react-icons/ci'
 import {TbDroplets,TbDeviceAnalytics,TbCactus} from 'react-icons/tb'
-import {AiOutlineArrowRight,AiOutlineCheckCircle} from 'react-icons/ai';
+import {AiOutlineArrowRight,AiOutlineCheckCircle,AiOutlineSend} from 'react-icons/ai';
+import {LuSendHorizonal} from 'react-icons/lu';
+import {MdOutlineAlternateEmail} from 'react-icons/md'
 import Slider from './Slider';
 
 
@@ -147,28 +149,65 @@ const LandingPage = () => {
         </div>
 
         {/* about-the-device-section */}
-            <div className ='flex flex-row bg-white relative top-[70rem] gap-[700px] '>
+            <div className ='flex flex-row bg-white relative top-[70rem] gap-[500px] '>
             <div>
                 {/* ????????????????? the back-ground stuff  */}
-            <img src={Device} alt="device-image" className='ml-[5rem]'/>
+            <img src={Device} alt="device-image" className=' ml-[10rem] '/>
+            <div className="flex flex-row bg-slate-100 rounded-lg  relative left-[150px] bottom-[5rem] w-[220px] h-[55px] px-[20px] py-[15px]">
+                <BsFillPlayFill className="text-red-500 text-3xl" />
+                <p className="text-xl text-slate-500">Play Intro video</p>
+                </div>
+
             </div>
             <div className='flex flex-col items-center   mt-[80px] relative right-[9rem]'>
                 <p className='text-blue-700 text-lg mr-[29rem]'>About</p>
                 <h3 className='text-stone-950 text-3xl mr-[15rem] mb-[1rem] font-semibold font-Sans'>The AIRA condenser</h3>
                 <p className='text-slate-500 text-2xl text-left w-[32rem]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore modi, iure cum ipsam velit nihil repudiandae est blanditiis aliquam.</p>
-                    <div className='flex flex-col gap-3 relative right-[2rem]'>
-                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center mt-[3rem] '><AiOutlineCheckCircle className='' /><span>Air condensation</span></p>
-                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center  '><AiOutlineCheckCircle className='' /><span>Water filtration</span></p>
-                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center '><AiOutlineCheckCircle className='' /><span>Water storage</span></p>
-                <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center '><AiOutlineCheckCircle className='' /><span>Usage analytics and device </span></p>
-
+                <div className='flex flex-col gap-3 relative right-[2rem]'>
+                    <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center mt-[3rem] '><AiOutlineCheckCircle className='' /><span>Air condensation</span></p>
+                    <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center  '><AiOutlineCheckCircle className='' /><span>Water filtration</span></p>
+                    <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center '><AiOutlineCheckCircle className='' /><span>Water storage</span></p>
+                    <p className='flex flex-row gap-8 text-slate-500 text-2xl items-center '><AiOutlineCheckCircle className='' /><span>Usage analytics and device </span></p>
                 </div>
                 <button className="bg-blue-700  w-[140px]  mt-[4rem] mr-[21rem] h-[60px] text-lg text-white rounded-full hover:bg-black hover:text-blue-500 px-4 py-3">
              Read more
              </button>
 
             </div>
+        </div>
+
+        {/* the contact us section */}
+        <div className='contact-us relative top-[75rem] bg-slate-100 '>
+            <div className='left-part  text-left pl-[8rem] pt-[4rem] flex flex-col gap-[0.5rem] font-sans'>
+                <h3 className='text-blue-700 text-base font-medium font-sans'>Contact us </h3>
+                <p className='text-stone-950 text-4xl font-medium font-sans'>Send us a message</p>
+                <p className='text-slate-500  font-normal font-sans text-left text-2xl w-[30rem] mt-[1rem]'>For Ideas,problems or requests,ping us a message, we'll egt back to you as quick as possible.</p>
+
+                <div className='input-fields flex flex-row gap-[1rem] mt-[1rem]'>
+                <input class="px-16 py-6 rounded-full items-center border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200"  type="text"  placeholder="First Name"/>
+                <input class="px-16 py-6 rounded-full items-center border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200"  type="text"  placeholder="Email Address"/>
+                </div>
+                <textarea class="w-[40rem] h-[9rem] p-5 rounded-2xl border-2xl border-transparent focus:border-slate-100" placeholder="Message"></textarea>
+                <button className="bg-blue-700  w-[150px] items-center jusitify-center  flex flex-row   mt-[2rem] mr-[21rem] h-[60px] text-xl text-white rounded-full hover:bg-black hover:text-blue-500 px-9 py-3">
+             Send <LuSendHorizonal className='relative left-[1rem] top-[0.2rem]'/>
+             </button>
             </div>
+
+            <div className='right-part flex flex-col  items-center relative bottom-[30rem]'>
+                <p className='text-stone-950 text-4xl font-medium font-sans'>Contact info</p>
+                <p className='text-slate-500 text-base font-normal font-sans leading-[22.88px]'>More contacts</p>
+                <div className='links flex flex-col gap-[10px]'>
+                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><MdOutlineAlternateEmail className='text-blue-700'/>info@aira.org</a>
+                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><MdOutlineAlternateEmail className='text-blue-700'/>info@aira.org</a>
+                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><MdOutlineAlternateEmail className='text-blue-700'/>info@aira.org</a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
     </div>
   )
 }
