@@ -8,12 +8,14 @@ import Image3 from './image3.png'
 import Image4 from './image4.png'
 import Image5 from'./image5.png'
 import Image6 from './image6.png'
-import { BsFillPlayFill } from 'react-icons/bs';
+import { BsFillPlayFill,BsTelephone } from 'react-icons/bs';
 import {CiLocationOn} from 'react-icons/ci'
 import {TbDroplets,TbDeviceAnalytics,TbCactus} from 'react-icons/tb'
 import {AiOutlineArrowRight,AiOutlineCheckCircle,AiOutlineSend} from 'react-icons/ai';
 import {LuSendHorizonal} from 'react-icons/lu';
-import {MdOutlineAlternateEmail} from 'react-icons/md'
+import {MdOutlineAlternateEmail} from 'react-icons/md';
+import {SlSocialTwitter} from 'react-icons/sl'
+import {GoLocation} from 'react-icons/go'
 import Slider from './Slider';
 
 
@@ -23,7 +25,7 @@ import Slider from './Slider';
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden overflow-y-hidden'>
         {/*Navbar  start*/}
         <div className="flex flex-row w-full h-[120px] py-[30px] gap-[60px]">
             <div>
@@ -105,11 +107,11 @@ const LandingPage = () => {
 
             {/* image-section-2 */}
             <div className='flex flex-row gap-[100px] relative ml-[300px] relative bottom-[150px]'>
-            <img src={Image1} alt="logo-image"  className="px-5 w-36 h-20"/>
-            <img src={Image2} alt="logo-image" className="px-5  w-38 h-24"/>
-            <img src={Image3} alt="logo-image" className="px-5  w-38 h-24"/>
-            <img src={Image4} alt="logo-image" className="px-5  w-38 h-24"/>
-            <img src={Image5} alt="logo-image" className="px-5  w-36 h-24"/>
+            <img src={Image1} alt="image 1"  className="px-5 w-36 h-20"/>
+            <img src={Image2} alt="image 2" className="px-5  w-38 h-24"/>
+            <img src={Image3} alt="image 3" className="px-5  w-38 h-24"/>
+            <img src={Image4} alt="image 4" className="px-5  w-38 h-24"/>
+            <img src={Image5} alt="image 5" className="px-5  w-36 h-24"/>
             </div>
 
             <p class="text-black text-5xl font-semibold font-sans relative relative ">What we solve </p>
@@ -177,11 +179,11 @@ const LandingPage = () => {
         </div>
 
         {/* the contact us section */}
-        <div className='contact-us relative top-[75rem] bg-slate-100 '>
+        <div className='contact-us relative top-[75rem] bg-slate-100 rounded-t-[3rem] '>
             <div className='left-part  text-left pl-[8rem] pt-[4rem] flex flex-col gap-[0.5rem] font-sans'>
                 <h3 className='text-blue-700 text-base font-medium font-sans'>Contact us </h3>
                 <p className='text-stone-950 text-4xl font-medium font-sans'>Send us a message</p>
-                <p className='text-slate-500  font-normal font-sans text-left text-2xl w-[30rem] mt-[1rem]'>For Ideas,problems or requests,ping us a message, we'll egt back to you as quick as possible.</p>
+                <p className='text-slate-500  font-normal font-sans text-left text-2xl w-[30rem] mt-[1rem]'>For Ideas,problems or requests,ping us a message, we'll get back to you as quick as possible.</p>
 
                 <div className='input-fields flex flex-row gap-[1rem] mt-[1rem]'>
                 <input class="px-16 py-6 rounded-full items-center border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200"  type="text"  placeholder="First Name"/>
@@ -189,17 +191,19 @@ const LandingPage = () => {
                 </div>
                 <textarea class="w-[40rem] h-[9rem] p-5 rounded-2xl border-2xl border-transparent focus:border-slate-100" placeholder="Message"></textarea>
                 <button className="bg-blue-700  w-[150px] items-center jusitify-center  flex flex-row   mt-[2rem] mr-[21rem] h-[60px] text-xl text-white rounded-full hover:bg-black hover:text-blue-500 px-9 py-3">
-             Send <LuSendHorizonal className='relative left-[1rem] top-[0.2rem]'/>
-             </button>
+                    Send <LuSendHorizonal className='relative left-[1rem] top-[0.2rem]'/>
+                </button>
             </div>
 
-            <div className='right-part flex flex-col  items-center relative bottom-[30rem]'>
-                <p className='text-stone-950 text-4xl font-medium font-sans'>Contact info</p>
-                <p className='text-slate-500 text-base font-normal font-sans leading-[22.88px]'>More contacts</p>
-                <div className='links flex flex-col gap-[10px]'>
+            <div className='right-part flex flex-col  items-center  relative bottom-[30rem] left-[25rem]'>
+                <p className='text-stone-950 text-4xl font-medium font-sans mr-[12rem]'>Contact info</p>
+                <p className='text-slate-500 text-base font-normal text-xl font-sans leading-[22.88px] mr-[3rem]'>More locations where you can find us</p>
+                <div className='links flex flex-col gap-[10px] mt-[2rem] text-2xl '>
                     <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><MdOutlineAlternateEmail className='text-blue-700'/>info@aira.org</a>
-                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><MdOutlineAlternateEmail className='text-blue-700'/>info@aira.org</a>
-                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><MdOutlineAlternateEmail className='text-blue-700'/>info@aira.org</a>
+                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><GoLocation className='text-blue-700 '/>Mukamira,Kigali - Rubavu, Rwanda</a>
+                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><BsTelephone className='text-blue-700'/>+250 788948375</a>
+                    <a href="#" className="flex flex-row gap-[10px] text-slate-500  font-normal font-sans items-center "><SlSocialTwitter className='text-blue-700'/>aira_org</a>
+
 
                 </div>
 
