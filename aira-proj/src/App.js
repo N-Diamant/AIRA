@@ -1,13 +1,15 @@
 import './App.css';
 import LandingPage from './components/Landing/LandingPage';
-import ThreeDswiper from './components/Landing/Slider'
+import ThreeDswiper from './components/Landing/Slider';
+import Footer from './components/Footer'
 
 
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      {/* <LandingPage /> */}
       {/* <ThreeDswiper /> */}
+      <Footer />
 
     </div>
   );
