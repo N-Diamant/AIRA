@@ -17,6 +17,7 @@ import {MdOutlineAlternateEmail} from 'react-icons/md';
 import {SlSocialTwitter} from 'react-icons/sl'
 import {GoLocation} from 'react-icons/go'
 import Slider from './Slider';
+import Footer from './../Footer'
 
 
 
@@ -210,6 +211,11 @@ const LandingPage = () => {
 
             </div>
 
+        </div>
+        {/* the footer section */}
+        <div className='mt-[74rem]'>
+
+        <Footer />
         </div>
 
     </div>
